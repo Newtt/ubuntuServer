@@ -10,7 +10,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 
 # Remove old dotfiles and replace them with the new ones
-rm ~/.vimrc
 rm ~/.zshrc
 cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.zshrc ~/.zshrc
