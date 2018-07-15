@@ -144,16 +144,9 @@ alias writing='xmodmap ~/linux_config/mint/keyboard_config/default_keyboard_shor
 alias process='ps aux | grep'
 
 ####################################################################################
-# SOURCE FILES
-####################################################################################
-source /home/newt/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-####################################################################################
 # SCREENFETCH
 ####################################################################################
 screenfetch
 
 # Style for zsh autosuggest
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
-
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
