@@ -147,6 +147,11 @@ alias process='ps aux | grep'
 ####################################################################################
 screenfetch
 
+####################################################################################
+# SOURCE FILES
+####################################################################################
+source /home/newt/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Style for zsh autosuggest
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
 
