@@ -117,7 +117,6 @@ alias o.='open .'
 alias x='exit'
 alias open='xdg-open'
 alias desk='cd ~/Desktop'
-alias tele='cd ~/Downloads/Telegram\ Desktop/'
 alias dl='cd ~/Downloads/'
 alias gdb='gdb -q'
 
@@ -126,10 +125,6 @@ alias sr='screen -r'
 
 # Alias pour rsync
 alias rsync='rsync -avzhP '
-
-# Alias pour java
-alias javacall='javac *.java'
-alias javadoc='javadoc -charset UTF-8 -author -version'
 
 # Alias docker
 alias dcu='docker-compose up'
