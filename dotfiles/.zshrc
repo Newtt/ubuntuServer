@@ -64,7 +64,7 @@ ZSH_THEME="bureau"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-autosuggestions)
+plugins=(zsh-z git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # Key configuration for zsh autosuggest
