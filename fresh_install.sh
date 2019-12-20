@@ -14,6 +14,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh-syntax-highlighting
 git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
+# Place the ca.pub at the correct place
+sudo mv ca.pub /etc/ssh
+
 # Remove old dotfiles and replace them with the new ones
 rm ~/.zshrc
 cp dotfiles/.vimrc ~/.vimrc
