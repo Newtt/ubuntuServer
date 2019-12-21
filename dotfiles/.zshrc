@@ -130,12 +130,8 @@ alias rsync='rsync -avzhP '
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 
-# Alias pour le layout du clavier
-alias coding='xmodmap ~/linux_config/mint/keyboard_config/coding_keyboard.conf'
-alias writing='xmodmap ~/linux_config/mint/keyboard_config/default_keyboard_short.conf'
-
 # Alias for process grabbing
-alias process='ps aux | grep'
+alias pg='ps aux | grep'
 
 ####################################################################################
 # SCREENFETCH
