@@ -6,7 +6,7 @@ sudo mv 50unattended-upgrades /etc/apt/apt.conf.d/
 sudo mv 20auto-upgrades /etc/apt/apt.conf.d/
 
 # Install basic packages
-sudo apt install -y glances vim zsh wget screen screenfetch tree ranger language-pack-en
+sudo apt install -y glances vim zsh wget tree language-pack-en
 
 # Required SSH configuration
 sudo mv ca.pub /etc/ssh
