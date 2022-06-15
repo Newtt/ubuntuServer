@@ -6,12 +6,11 @@ sudo mv 50unattended-upgrades /etc/apt/apt.conf.d/
 sudo mv 20auto-upgrades /etc/apt/apt.conf.d/
 
 # Install basic packages
-sudo apt install -y glances vim zsh wget tree language-pack-en
+sudo apt install -y vim zsh wget tree language-pack-en
 
 # Required SSH configuration
 sudo mv ca.pub /etc/ssh
 echo TrustedUserCAKeys /etc/ssh/ca.pub | sudo tee -a /etc/ssh/sshd_config
-ssh-keygen -t ecdsa
 sudo systemctl restart sshd
 
 # Remove password authentication
@@ -29,25 +28,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 rm ~/.zshrc
 cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.zshrc ~/.zshrc
-
-# ZABBIX INSTALLATION
-# Update packet repo
-wget http://repo.zabbix.com/zabbix/4.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_4.4-1%2Bbionic_all.deb
-sudo dpkg -i zabbix-release_4.4-1+bionic_all.deb
-
-# Install the agent
-sudo apt update && sudo apt install zabbix-agent -y
-
-# Remove the downloaded deb file
-rm zabbix-release_4.4-1+bionic_all.deb
-
-# Modify the configuration
-read -p 'Zabbix server IP : ' server_ip
-sudo sed -i "s/127.0.0.1/$server_ip/g" /etc/zabbix/zabbix_agentd.conf
-
-# Enable the service
-sudo systemctl enable zabbix-agent
-sudo systemctl start zabbix-agent
 
 # NTP Setup
 echo 'Servers=0.debian.pool.ntp.org 1.debian.pool.ntp.org 2.debian.pool.ntp.org 3.debian.pool.ntp.org' | sudo tee -a /etc/systemd/timesyncd.conf
