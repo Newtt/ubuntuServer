@@ -133,16 +133,6 @@ alias dcd='docker-compose down'
 # Alias for process grabbing
 alias pg='ps aux | grep'
 
-####################################################################################
-# SCREENFETCH
-####################################################################################
-screenfetch
-
-####################################################################################
-# SOURCE FILES
-####################################################################################
-source /home/newt/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Style for zsh autosuggest
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
 
